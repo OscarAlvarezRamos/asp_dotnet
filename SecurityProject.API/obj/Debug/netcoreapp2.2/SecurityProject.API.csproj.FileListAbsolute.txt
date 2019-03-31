@@ -1,0 +1,14 @@
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\bin\Debug\netcoreapp2.2\SecurityProject.API.deps.json
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\bin\Debug\netcoreapp2.2\SecurityProject.API.runtimeconfig.json
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\bin\Debug\netcoreapp2.2\SecurityProject.API.runtimeconfig.dev.json
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\bin\Debug\netcoreapp2.2\SecurityProject.API.dll
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\bin\Debug\netcoreapp2.2\SecurityProject.API.pdb
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.csprojAssemblyReference.cache
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.csproj.CoreCompileInputs.cache
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.RazorAssemblyInfo.cache
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.RazorAssemblyInfo.cs
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.AssemblyInfoInputs.cache
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.AssemblyInfo.cs
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.RazorTargetAssemblyInfo.cache
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.dll
+C:\Visual Studio Projects\ASPNET_Core\SecurityProject\SecurityProject.API\obj\Debug\netcoreapp2.2\SecurityProject.API.pdb
