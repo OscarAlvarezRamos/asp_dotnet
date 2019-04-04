@@ -6,14 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SecurityProject.API.Data;
 
+
+
+
 namespace SecurityProject.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class RolesController : ControllerBase
     {
-        private readonly DataContext _context;
-        public RolesController(DataContext context)
+        private readonly project_securityContext _context;
+        public RolesController(project_securityContext context)
         {
             _context = context;
         }
@@ -30,7 +33,7 @@ namespace SecurityProject.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetRole(int id)
         {
-            var role = await _context.Roles.FirstOrDefaultAsync(x => x.role_id ==id);
+            var role = await _context.Roles.FirstOrDefaultAsync(x => x.RoleId ==id);
 
             return Ok(role);
 
