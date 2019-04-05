@@ -30,7 +30,7 @@ namespace SecurityProject.API
         public void ConfigureServices(IServiceCollection services)
         {
             // services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDbContext<project_securityContext>(x => x.UseMySql(Configuration.GetConnectionString("mysql")));
+            services.AddDbContext<security_projectContext>(x => x.UseMySql(Configuration.GetConnectionString("mysql")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

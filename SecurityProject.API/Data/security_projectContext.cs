@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace SecurityProject.API.Data
 {
-    public partial class project_securityContext : DbContext
+    public partial class security_projectContext : DbContext
     {
-        public project_securityContext()
+        public security_projectContext()
         {
         }
 
-        public project_securityContext(DbContextOptions<project_securityContext> options)
+        public security_projectContext(DbContextOptions<security_projectContext> options)
             : base(options)
         {
         }
@@ -22,12 +22,38 @@ namespace SecurityProject.API.Data
 //             if (!optionsBuilder.IsConfigured)
 //             {
 // #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-//                 optionsBuilder.UseMySql("Server=192.168.200.100;Database=project_security;User=security_usr;Password=P@ssw0rd;");
+//                 optionsBuilder.UseMySql("Server=192.168.200.100;Database=security_project;User=security_usr;Password=P@ssw0rd;");
 //             }
 //         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.Entity<Roles>().HasData(
+                new Roles
+                {
+                    RoleId = 1,
+                    RoleCode = "admin",
+                    RoleDescription = "System Administrator",
+                    RoleActiveDefault = 0                   
+                },
+                new Roles
+                {
+                    RoleId = 2,
+                    RoleCode = "user",
+                    RoleDescription = "Application User",
+                    RoleActiveDefault = 1                   
+                },
+                new Roles
+                {
+                    RoleId = 3,
+                    RoleCode = "guest",
+                    RoleDescription = "Guest User",
+                    RoleActiveDefault = 1                   
+                }                
+            );
+
+
             modelBuilder.Entity<Roles>(entity =>
             {
                 entity.HasKey(e => e.RoleId)
@@ -57,7 +83,7 @@ namespace SecurityProject.API.Data
                 entity.Property(e => e.RoleSysdate)
                     .HasColumnName("role_sysdate")
                     .HasColumnType("datetime")
-                    .HasDefaultValueSql("'CURRENT_TIMESTAMP'");
+                    .HasDefaultValueSql("now()");
             });
         }
     }

@@ -15,8 +15,8 @@ namespace SecurityProject.API.Controllers
     [ApiController]
     public class RolesController : ControllerBase
     {
-        private readonly project_securityContext _context;
-        public RolesController(project_securityContext context)
+        private readonly security_projectContext _context;
+        public RolesController(security_projectContext context)
         {
             _context = context;
         }
